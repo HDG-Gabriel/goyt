@@ -4,11 +4,12 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"goyt/utils"
 	"io"
 	"io/ioutil"
 	"net/http"
 	"os"
+
+	"github.com/HDG-Gabriel/goyt/utils"
 )
 
 type Video struct {
