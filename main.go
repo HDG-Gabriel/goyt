@@ -50,7 +50,7 @@ func startSearch(id, urlVideo, filename string, isHD bool) {
 	req, _ := http.NewRequest("GET", base, nil)
 
 	req.Header.Add("x-rapidapi-host", "ytstream-download-youtube-videos.p.rapidapi.com")
-	req.Header.Add("x-rapidapi-key", <YOUR_API_KEY_HERE>)
+	req.Header.Add("x-rapidapi-key", "32116b9979msh9d3a64a4f678dcfp153c38jsn2a2aeb7bc25d")
 
 	res, err := http.DefaultClient.Do(req)
 	if err != nil {

@@ -32,5 +32,3 @@ $ goyt -hd true -u https://www.youtube.com/watch?v=Isim0ysZ6X4
 - Renamed file:
 $ goyt -n hawking -u https://www.youtube.com/watch?v=Isim0ysZ6X4
 ```
-## Note
-You can install and use free this program, but if you want modify it you need insert a new key from this [api](https://rapidapi.com/ytjar/api/ytstream-download-youtube-videos/).
