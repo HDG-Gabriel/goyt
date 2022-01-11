@@ -1,3 +1,3 @@
-module github.com/HDG-Gabriel/goyt
+module github.com/gotneb/goyt
 
 go 1.17

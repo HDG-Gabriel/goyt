@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/HDG-Gabriel/goyt/utils"
+	"github.com/gotneb/goyt/utils"
 )
 
 type Video struct {

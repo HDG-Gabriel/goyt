@@ -13,7 +13,7 @@ func GetID(url string) string {
 
 // Returns user downloads path format: /home/user/Downloads/
 func GetDownloadsPath() string {
-	return filepath.Join(os.Getenv("HOME"), "/Downloads")
+	return filepath.Join(os.Getenv("HOME"), "Downloads")
 }
 
 func ShowBanner() {
