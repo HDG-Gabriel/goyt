@@ -2,7 +2,7 @@
  Download videos from youtube in go
 ## Installation
 ```
-go install github.com/HDG-Gabriel/goyt@latest
+go install github.com/gotneb/goyt@latest
 ```
 ## Usage
 ```
