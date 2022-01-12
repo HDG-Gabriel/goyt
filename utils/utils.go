@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"runtime"
 )
 
 // Get id from url's video
@@ -11,9 +12,17 @@ func GetID(url string) string {
 	return url[32 : 32+11]
 }
 
-// Returns user downloads path format: /home/user/Downloads/
-func GetDownloadsPath() string {
-	return filepath.Join(os.Getenv("HOME"), "Downloads")
+func GetDownloadsPath(filename string) string {
+	var homePath string
+	switch runtime.GOOS {
+	case "linux":
+		homePath = "HOME"
+	case "windows":
+		homePath = "USERPROFILE"
+	default:
+		panic("This program doesn't support your current OS")
+	}
+	return filepath.Join(os.Getenv(homePath), "Downloads", filename)
 }
 
 func ShowBanner() {

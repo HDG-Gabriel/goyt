@@ -84,6 +84,7 @@ func startSearch(id, urlVideo, filename string, isHD bool) {
 	fmt.Println("Sucess to download!")
 }
 
+// Downloads video into download's path
 func downloadFile(url, filename string) error {
 	res, err := http.Get(url)
 	if err != nil {
@@ -92,7 +93,7 @@ func downloadFile(url, filename string) error {
 	}
 	defer res.Body.Close()
 
-	out, err := os.Create(utils.GetDownloadsPath() + filename)
+	out, err := os.Create(utils.GetDownloadsPath(filename))
 	if err != nil {
 		os.Exit(1)
 		return err
